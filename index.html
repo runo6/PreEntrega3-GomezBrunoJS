@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODEBURGERS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand m-0" href="#">
+          <img src="./img/logo2.svg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+        </a>
+        <div class="navbar-text ml-auto">CODEBURGERS</div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-4">
+      <div class="simulador">
+        <p><strong>Elige un combo de hamburguesa:</strong></p>
+        <div class="combo-container text-center"> 
+          <label for="combo1" class="combo-label">
+            <input type="radio" name="combo" id="combo1" value="1" hidden>
+            <img src="./img/hamb-01.png" alt="AsyncBurger" width="250" height="300" class="combo-img">
+            <div class="combo-name">The Async Burger ($1200)</div>
+          </label>
+          <label for="combo2" class="combo-label">
+            <input type="radio" name="combo" id="combo2" value="2" hidden>
+            <img src="./img/hamb-02.png" alt="VanillaClassic" width="250" height="300" class="combo-img">
+            <div class="combo-name">The Vanilla Classic ($1500)</div>
+          </label>
+          <label for="combo3" class="combo-label">
+            <input type="radio" name="combo" id="combo3" value="3" hidden>
+            <img src="./img/hamb-03.png" alt="ES6Supreme" width="250" height="300" class="combo-img">
+            <div class="combo-name">The ES6 Supreme ($1700)</div>
+          </label>
+        </div>
+        <p><strong>¿Desea que su hamburguesa sea doble?</strong></p>
+        <input type="radio" name="doble" value="si"> Sí<br>
+        <input type="radio" name="doble" value="no" checked> No<br>
+        <p><strong>¿Desea ordenar papas?</strong></p>
+        <input type="radio" name="papas" value="si"> Sí<br>
+        <input type="radio" name="papas" value="no" checked> No<br>
+        <div class="text-center mt-4">
+          <div class="btn-group" role="group" aria-label="Botones de pedido">
+            <button id="btn-agregar" class="btn btn-primary">Agregar al Pedido</button>
+            <button id="btn-finalizar" style="display: none;" class="btn btn-success">Finalizar Pedido</button>
+            <button id="btn-limpiar" style="display: none;" class="btn btn-secondary">Limpiar Pedido</button>
+          </div>
+        </div>
+        <div id="resultado" style="display: none;"></div>
+        <div id="pedido" style="display: none;"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  height: 125px;
+  background-color: #323330;
+}
+
+/* Estilos para el texto del logotipo */
+.navbar-brand {
+  color: #F0DB4F; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para el texto "CODEBURGER" */
+.navbar-text {
+  color: #F0DB4F;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+/* Estilos para los titulos */
+h1 {
+  text-align: center;
+}
+
+/* Estilos para la caja del simulador */
+.simulador {
+  background-color: #f9f9f9; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde con color gris claro */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 20px; /* Relleno alrededor del contenido */
+}
+
+/* Estilos para los label */
+label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+/* Estilos para los input */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px; /* Margen a la derecha de los botones de opción */
+}
+
+/* Estilo para mostrar una mano al pasar por encima de las imágenes */
+.combo-label {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Estilo para las imagenes */
+.combo-img {
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+/* Estilo cuando la imagen está seleccionada */
+input[type="radio"]:checked + .combo-img {
+  border-color: #F0DB4F; 
+  box-shadow: 0 0 5px #F0DB4F; 
+}
+
+/* Estilo para el nombre debajo de la imagen */
+.combo-name {
+  margin-top: 10px;
+  color: #323330;
+  font-weight: bold;
+}
+
+/* Estilo de ancho máximo para el contenedor de combos */
+.combo-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para el botón de Agregar al Pedido */
+#btn-agregar {
+  background-color: #F0DB4F; 
+  border-color: #F0DB4F; 
+}
+
+/* Estilos para el botón de Finalizar Pedido */
+#btn-finalizar {
+  background-color: #F0DB4F; 
+  border-color: #F0DB4F; 
+}
+
+/* Estilos para el botón de Limpiar Pedido */
+#btn-limpiar {
+  background-color: #323330; 
+  border-color: #323330; 
+}
+
+/* Estilos para el texto del resultado y pedido */
+#resultado, #pedido {
+  color: #323330; 
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Estilos para los items del pedido */
+.pedido-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Estilos para los botones de pedido */
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos adicionales para los botones */
+#btn-agregar,
+#btn-finalizar,
+#btn-limpiar {
+  margin-right: 10px;
+}
